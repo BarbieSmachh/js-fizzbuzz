@@ -5,11 +5,33 @@
 // expected here.
 
 'use strict';
-
+console.log('v1')
 var fizzbuzz = function (x) {
-//
-// YOUR CODE GOES HERE
-//
+if((x%3===0)&&(x%5===0)){
+    console.log('fizzbuzz');
 };
-
-module.exports = { fizzbuzz: fizzbuzz };
+if((x%3===0)&&(x%5!=0)){
+    console.log('fizz');
+};
+if((x%5===0)&&(x%3!=0)){
+    console.log('buzz');
+};
+if((x%3!=0)&&(x%5!=0)){
+    console.log(x);
+};
+};
+fizzbuzz(15);
+console.log('v2')
+var fizzbuzz = function (x) {
+    if((x%3===0)&&(x%5===0)){
+        console.log('fizzbuzz');
+       }else if((x%3!=0)&&(x%5!=0)){
+        console.log(x);
+    }else if((x%5===0)&&(x%3!=0)){
+        console.log('buzz');
+    }else if((x%3===0)&&(x%5!=0)){
+        console.log('fizz');
+    };
+    
+}
+fizzbuzz(15);
