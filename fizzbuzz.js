@@ -43,15 +43,38 @@
 // tablec.forEach(chiffre => {
 //     console.log(chiffre);
 // })
-let  alphabetFrancais = [
-    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 's', 'm', 'n', 'o', 'p', 'q', 'r', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-];
-let a=''
-let i = -1
-while (a!=='s'){
-    if (a==='s'){
-        break;
-    }else{ i++, a = alphabetFrancais[i]; 
-        console.log(a,i+1);
-}
+// let  alphabetFrancais = [
+//     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 's', 'm', 'n', 'o', 'p', 'q', 'r', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+// ];
+// let a=''
+// let i = -1
+// while (a!=='s'){
+//     if (a==='s'){
+//         break;
+//     }else{ i++, a = alphabetFrancais[i]; 
+//         console.log(a,i+1);
+// }
+// };
+// let resultat;
+// function additionner(chiffre1, chiffre2){
+//     return(chiffre1+chiffre2);
+// };
+// resultat = additionner(10,9);
+
+// function multiplier(chiffre1, chiffre2){
+//     console.log(chiffre1*chiffre2)
+// }
+// multiplier(14, resultat)
+let surface;
+let tableausurface=[10,5]
+function calcul(longueur, largeur){
+    if (tableausurface[0]===tableausurface[1]) {
+    console.log('c\'est un carré de')
+}else{
+    console.log('c\'est un rectangle de')
 };
+    return(longueur*largeur
+    );
+};
+surface = calcul(tableausurface[0],tableausurface[1])+' m²';
+console.log (surface)
